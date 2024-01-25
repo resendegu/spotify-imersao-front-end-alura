@@ -1,0 +1,363 @@
+/* HEADER */
+
+.main-container {
+    /* position: fixed; */
+    margin-top: 12px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /* max-width: 80vw; */
+    min-width: fit-content;
+    height: 100%;
+    margin-left: 324px;
+    margin-right: 12px;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    /* margin: 10px; */
+    border-radius: 8px;
+    background-color: #121212;
+}
+
+.header-navigation .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-navigation .navigation .arrow-left {
+    margin-right: 1.25rem;
+}
+
+.arrow-left, .arrow-right {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--bg-icon);
+    background-color: var(--bg-arrow-color);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.header-login {
+    display: flex;
+    align-items: center;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 48px;
+    background-color: #242424;
+    border-radius: 500px;
+    border: 1px solid transparent;
+    margin-left: 16px;
+}
+
+#small-search {
+    display: none;
+}
+
+.header-search span {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.header-search input {
+    background: transparent;
+    border: none;
+    padding: 0px 0px 0 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+    color: #fff;
+}
+
+.header-login .subscribe {
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 32px;
+    width: 150px;
+    height: 48px;
+    border-radius: 40px;
+}
+
+.header-login .subscribe:hover {
+    transition-duration: 500ms;
+    background-color: #242424;
+    color: #fff;
+}
+
+.header-login .login {
+    width: 100px;
+    height: 48px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+}
+
+.playlist-container {
+    padding: 16px;
+    margin-top: 12px;
+    border-radius: 8px;
+    background-color: #121212;
+    height: 70vh;
+    max-width: 50wvw;
+}
+
+.playlist-container .text {
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.playlist-container .text .title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.playlist-container .text .subtitle {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* SCROLL */
+.offer-scroll-container {
+    max-height: 52vh;
+    margin: 3rem;
+    overflow-y: auto;
+}
+
+.offer-scroll-container::-webkit-scrollbar {
+    width: 0.0625rem;
+}
+
+.offer-scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.offer-list-item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cards {
+    position: relative;
+    width: 13.75rem; /* 220px para rem */
+    height: 12.5rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.cards span {
+    padding: 1rem;
+    position: absolute;
+    color: var(--text-base-light);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.offer-list-item img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 107px;
+    transform: rotate(25deg) translate(18%, -2%);
+}
+
+/* COLOR CARDS */
+.card1 {
+    background-color: var(--card1);
+}
+
+.card2 {
+    background-color: var(--card2);
+}
+
+.card3 {
+    background-color: var(--card3);
+}
+
+.card4 {
+    background-color: var(--card4);
+}
+
+.card5 {
+    background-color: var(--card5);
+}
+
+.card6 {
+    background-color: var(--card6);
+}
+
+.card7 {
+    background-color: var(--card7);
+}
+
+.card8 {
+    background-color: var(--card8);
+}
+
+.card9 {
+    background-color: var(--card9);
+}
+
+.card10 {
+    background-color: var(--card10);
+}
+
+.card11 {
+    background-color: var(--card11);
+}
+
+.card12 {
+    background-color: var(--card12);
+}
+
+.card13 {
+    background-color: var(--card13);
+}
+
+.card14 {
+    background-color: var(--card14);
+}
+
+.card15 {
+    background-color: var(--card15);
+}
+
+.hidden {
+    display: none;
+}
+
+/* CARD ARTISTA */
+
+.artist {
+    --column-count: 5;
+    --grid-gap: 24px;
+    --min-container-width: 372px;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid-container {
+    grid-gap: var(--grid-gap);
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+    min-width: var(--min-container-width);
+}
+
+.artist-card {
+    background: #181818;
+    border-radius: 8px;
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 16px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.artist-card:hover {
+    background-color: #252525;
+}
+
+.card-img {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.artist-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 62px;
+}
+
+.card-text a {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #fff;
+}
+
+.artist-name {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-block-end: 8px;
+}
+
+.artist-category {
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.play {
+    position: relative;
+}
+
+.play .fa-play {
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    font-size: 14px;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.artist-card:hover .play .fa-play {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.play .fa-play:hover {
+    padding: 20px;
+    cursor: pointer;
+}
+
+#result-artist {
+    padding: 20px 40px;
+}
+/* FIM CARD ARTISTA */

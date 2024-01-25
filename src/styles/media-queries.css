@@ -1,0 +1,151 @@
+@media screen and (max-width: 1391px) {
+    .offer-list-item {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cards {
+        width: 10.75rem;
+        height: 9.5rem;
+    }
+
+    .cards span {
+        font-size: 1.25rem;
+    }
+    .header-search {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1009px) {
+    .offer-list-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header-search {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .offer-list-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards {
+        width: 7.5rem;
+        height: 6.25rem;
+    }
+
+    .cards span {
+        font-size: 1rem;
+    }
+    .header-search {
+        width: 130px;
+    }
+
+    .header-login .subscribe {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 717px) {
+    .offer-list-item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cards {
+        width: 7.5rem;
+        height: 6.25rem;
+    }
+
+    .playlist-container .text .subtitle {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .playlist-container .text .title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .cards span {
+        font-size: 1rem;
+    }
+    .header-search {
+        width: 80px;
+        margin-right: 10px;
+    }
+
+    .header-login .subscribe {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .offer-list-item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cards {
+        width: 7.5rem;
+        height: 6.25rem;
+    }
+
+    .cards span {
+        font-size: 1rem;
+    }
+    .header-search {
+        display: none;
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    #small-search {
+        display: flex;
+    }
+
+    .header-login .subscribe {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .offer-list-item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cards {
+        width: 5.5rem;
+        height: 4.25rem;
+    }
+
+    .playlist-container .text .subtitle {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .cards span {
+        font-size: 0.75rem;
+    }
+
+    .header-search {
+        display: none;
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    .offer-scroll-container {
+        margin: 0.5rem;
+    }
+
+    #big-search {
+        display: none;
+    }
+
+    #small-search {
+        display: flex;
+    }
+    .header-login .subscribe {
+        display: none;
+    }
+}
